@@ -1,0 +1,50 @@
+version: '3.8'
+services:
+  service1:
+    build: ./service1
+    environment: 
+      SQLALCHEMY_DATABASE_URI: sqlite:///data.db
+    image: saifulkislam/service1:s1
+    deploy:
+      replicas: 2
+    ports:
+    - target: 5000
+      published: 5000
+      protocol: tcp
+  service2:
+    build: ./service2
+    image: saifulkislam/service2:s2
+    deploy:
+      replicas: 2
+    ports:
+    - target: 5001
+      published: 5001
+      protocol: tcp
+  service3:
+    build: ./service3
+    image: saifulkislam/service3:s3
+    deploy:
+      replicas: 2
+    ports:
+    - target: 5002
+      published: 5002
+      protocol: tcp
+  service4:
+    build: ./service4
+    image: saifulkislam/service4:s4
+    deploy:
+      replicas: 2
+    ports:
+    - target: 5003
+      published: 5003
+      protocol: tcp
+  nginx:
+    image: saifulkislam/nginx:latest
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: ./nginx/nginx.conf
+      target: /etc/nginx/nginx.conf
