@@ -5,8 +5,8 @@
     - [Objective](#obj)
     - [Project Approach](#approach)
 - [Architecture](#arch)
-    - [Container level architecture](#cla)
     - [Service-Orientated architecture](#soa) 
+    - [Container level architecture](#cla)
     - [Application Infrastructure](#appinf)
     - [Entity Relationship Diagram](#erd)
 - [Continuous Integration pipeline](#ci)
@@ -57,7 +57,7 @@ def index():
 Service 2 generates a random car make. I assigned 3 possible variations to this service. one of the 3 variatiosn will be chosen randomly. This service will send a GET request. 
 
 **routes located:  service2/application/routes.py**
-```bash
+```
 @app.route('/make', methods=['GET'])
 def make():
     
@@ -68,17 +68,25 @@ def make():
 ```
 
 #### Service 3
-Service 3 generates a random shape to go with the selected car make. There are 3 variatiosn for this service also and again is randomly generated. This again is a GET request.
+Service 3 generates a random shape to go with the selected car make. There are 3 variations for this service also and again is randomly generated. This again is a GET request.
 
 **routes located:  service3/application/routes.py**
 ```bash
-from flask import Flask, Response, request
-import random
-from application import app
 
-from flask import Flask, Response, request
-import random
-from application import app
+@app.route('/shape', methods=['GET'])
+def team():
+
+    teams = ["Hatchback", "Saloon", "SUV"]
+
+    team = teams[random.randrange(0,3)]
+    
+    return Response(team, mimetype="text/plain")
+```
+
+#### Service 4
+Service 4 is used to generate a random car more which coincides with both service 2 (make of the cra) and service 3 (shape of the car). Service 4 will then return the car model back to service 1 as a POST response to display to the user. 
+
+**routes located:  service4/application/routes.py**
 
 @app.route('/model', methods=['GET','POST'])
 def model():
@@ -114,4 +122,14 @@ def model():
 
     
     return Response(model, mimetype="text/plain")
-```
+``'
+
+<a name="arch"></a>
+## Architecture
+
+<a name="soa"></a>
+### Service-Orientated architecture 
+Below is the service architecture of my application. 
+
+<img src="/images/service.png" alt="" width="100%" height="100%"/>
+
