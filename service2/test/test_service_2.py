@@ -1,7 +1,7 @@
 from unittest.mock import patch
 from flask import url_for
 from flask_testing import TestCase
-from application import app
+import app
 
 class TestBase(TestCase):
 
@@ -10,7 +10,7 @@ class TestBase(TestCase):
 
 class TestResponse(TestBase):
 
-    def test_Audi(self):
+    def test_audi(self):
         with patch('random.randrange') as r:
             r.return_value = 0
             response = self.client.get(url_for('make'))

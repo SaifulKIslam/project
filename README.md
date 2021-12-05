@@ -5,20 +5,15 @@
     - [Objective](#obj)
     - [Project Approach](#approach)
 - [Architecture](#arch)
-    - [Service-Orientated architecture](#soa) 
-    - [Container level architecture](#cla)
-    - [Application Infrastructure](#appinf)
-    - [Entity Relationship Diagram](#erd)
+    - [Service architecture](#soa) 
+    - [Container architecture](#cla)
 - [Continuous Integration pipeline](#ci)
-    - [CI pipeline - version 1](#ci1)
-    - [CI pipeline - version 2](#ci2)
 - [Testing](#test_)
     - [Service 1 test](#test_1)
     - [Service 2 & 3 test](#test_2/3)
     - [Service 4 test](#test_4)
 - [Risk Assessment](#risks)
 - [Project Planning & Tracking](#use_case)
-- [Technologies used](#tech)
 - [Successes](#suc)
 - [Future Improvements](#improve)
 
@@ -128,8 +123,24 @@ def model():
 ## Architecture
 
 <a name="soa"></a>
-### Service-Orientated architecture 
+### Service Architecture 
 Below is the service architecture of my application. 
 
 <img src="/images/service.png" alt="" width="100%" height="100%"/>
+
+<a name="cla"></a>
+### Container level architecture
+Below is the Container architecture for my application:
+
+<img src="/images/conatiner.png" alt="" width="100%" height="100%"/>
+
+<a name=ci></a>
+## CI Pipeline
+
+
+<a name=risks></a>
+## Risk Assessment
+I have thought of a number of risks that my project may face and have categorised them below to analyse the risk, its impact, likelihood and the appropriate response to that risk. The risks can be seen as a combination of technical risks associate with the development side of the project and general risks that will directly or indirectly impact the project. I also revisted the risks and wrote furtehr comments.
+
+<img src="/images/Risk_assessment.png" alt="" width="100%" height="100%"/>
 
