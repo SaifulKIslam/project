@@ -143,9 +143,9 @@ In teh initial staged my test coverage was high; however later on when my projec
 
 <a name=risks></a>
 ## Risk Assessment
-I have thought of a number of risks that my project may face and have categorised them below to analyse the risk, its impact, likelihood and the appropriate response to that risk. The risks can be seen as a combination of technical risks associate with the development side of the project and general risks that will directly or indirectly impact the project. I also revisted the risks and wrote furtehr comments.
+I have thought of a number of risks that my project may face and have categorised them below to analyse the risk, its impact, likelihood and the appropriate response to that risk. The risks can be seen as a combination of technical risks associate with the development side of the project and general risks that will directly or indirectly impact the project. I also revisted the risks and wrote further comments.
 
-<img src="/images/Risk_assessment.png" alt="" width="100%" height="100%"/>
+<img src="/images/risk.png" alt="" width="100%" height="100%"/>
 
 <a name="use_case"></a>
 ## Project Planning & Tracking
