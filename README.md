@@ -9,12 +9,8 @@
     - [Container architecture](#cla)
 - [Continuous Integration pipeline](#ci)
 - [Testing](#test_)
-    - [Service 1 test](#test_1)
-    - [Service 2 & 3 test](#test_2/3)
-    - [Service 4 test](#test_4)
 - [Risk Assessment](#risks)
 - [Project Planning & Tracking](#use_case)
-- [Successes](#suc)
 - [Future Improvements](#improve)
 
 <a name="brief"></a>
@@ -136,6 +132,13 @@ Below is the Container architecture for my application:
 
 <a name=ci></a>
 ## CI Pipeline
+I had issues connecting to Jenkins.
+
+<img src="/images/jenkins.png" alt="" width="100%" height="100%"/>
+
+<a name="test"></a>
+## Testing
+In teh initial staged my test coverage was high; however later on when my project developed issues i re-ran the tests and my coverage was low.
 
 
 <a name=risks></a>
@@ -144,3 +147,14 @@ I have thought of a number of risks that my project may face and have categorise
 
 <img src="/images/Risk_assessment.png" alt="" width="100%" height="100%"/>
 
+<a name="use_case"></a>
+## Project Planning & Tracking
+I was unabel to carry out my full Project Plan as i faced issues. 
+
+<img src="/images/plan.png" alt="" width="100%" height="100%"/>
+
+<a name="improve"></a>
+## Future Improvements
+
+- Solve issues to compelete project on time. 
+- 
