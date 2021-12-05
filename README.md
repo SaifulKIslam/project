@@ -1,4 +1,4 @@
-# Random car generator ⚽
+# Random car generator 
 
 ## Contents
 - [Brief](#brief)
