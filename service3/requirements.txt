@@ -1,0 +1,10 @@
+Flask
+PyMySQL
+Jinja2
+requests
+pytest
+pytest-cov
+Flask-Testing
+Flask-SQLAlchemy
+SQLAlchemy
+Gunicorn
