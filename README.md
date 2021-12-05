@@ -128,7 +128,7 @@ Below is the service architecture of my application.
 ### Container level architecture
 Below is the Container architecture for my application:
 
-<img src="/images/conatiner.png" alt="" width="100%" height="100%"/>
+<img src="/images/container.png" alt="" width="100%" height="100%"/>
 
 <a name=ci></a>
 ## CI Pipeline
